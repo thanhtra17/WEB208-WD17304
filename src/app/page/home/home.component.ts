@@ -7,8 +7,11 @@ import { Product } from 'src/app/comon/product';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  show = true;
+  // show = true;
   // show(id) {};
+  toggleDescription(product: any) {
+    product.isDescriptionVisible = !product.isDescriptionVisible;
+  }
   products: Product[] = [
     {
       id: '1',
@@ -17,6 +20,8 @@ export class HomeComponent {
       description: 'Product 1 description',
       imgUrl:
         'https://m.media-amazon.com/images/M/MV5BYzQ0ZWIxZjAtYWI3Yy00MGM0LWFjOGYtNzcyYThiOTA3ODI1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',
+        isDescriptionVisible: false,
+        
     },
     {
       id: '2',
@@ -25,6 +30,7 @@ export class HomeComponent {
       description: 'Product 1 description',
       imgUrl:
         'https://m.media-amazon.com/images/M/MV5BYzQ0ZWIxZjAtYWI3Yy00MGM0LWFjOGYtNzcyYThiOTA3ODI1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',
+        isDescriptionVisible: false,
     },
     {
       id: '3',
@@ -33,6 +39,7 @@ export class HomeComponent {
       description: 'Product 1 description',
       imgUrl:
         'https://m.media-amazon.com/images/M/MV5BYzQ0ZWIxZjAtYWI3Yy00MGM0LWFjOGYtNzcyYThiOTA3ODI1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',
+        isDescriptionVisible: false,
     },
   ];
   }
