@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CategoryComponent } from './page/category/category.component';
 import { ProductsComponent } from './page/products/products.component';
+import { DeltailComponent } from './page/deltail/deltail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductsComponent } from './page/products/products.component';
     LoginComponent,
     RegisterComponent,
     CategoryComponent,
-    ProductsComponent
+    ProductsComponent,
+    DeltailComponent
   ],
   imports: [
     BrowserModule,
