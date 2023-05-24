@@ -11,6 +11,11 @@ import { RegisterComponent } from './components/register/register.component';
 import { CategoryComponent } from './page/category/category.component';
 import { ProductsComponent } from './page/products/products.component';
 
+import { LayoutComponent } from './admin/layout/layout.component';
+import { ProductComponent } from './admin/product/product.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { FooterComponent } from './admin/component/footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +25,12 @@ import { ProductsComponent } from './page/products/products.component';
     LoginComponent,
     RegisterComponent,
     CategoryComponent,
-    ProductsComponent
+    ProductsComponent,
+    
+    LayoutComponent,
+    ProductComponent,
+    DashboardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
