@@ -1,26 +1,51 @@
-<p>HOME PAGE</p>
-<div class="row">
-<div class="col-4" *ngFor="let product of products">
-<div class="card" style="width: 18rem;">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <div class="card-body " >
-      <h5 class="card-title">{{ product.id }}</h5>
-      <p class="card-text">{{ product.name }}</p>
-      <p class="card-text">{{ product.price }}</p>
-      
+<div class="container-fluid">
+  <div id="carouselExampleControls" class="carousel slide w-75 mx-auto " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://pos.nvncdn.net/6dfdd6-29193/bn/20230309_AkCSeg5AVDIcpIyh.jpeg" class="d-block w-100 rounded-3" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://pos.nvncdn.net/6dfdd6-29193/bn/20230424_iTorkzYZ.jpeg" class="d-block w-100 rounded-3" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://pos.nvncdn.net/6dfdd6-29193/bn/20230518_RMtb6GSo.jpeg" class="d-block w-100 rounded-3" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="row mt-5 ">
+  <div class="col-sm-4 " *ngFor="let product of products">
+  <div class="card mx-auto" style="width: 18rem;">
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body " >
+        <img class="w-100" src="{{ product.imgUrl }}" alt="">
+        <!-- <h5 class="card-title">{{ product.id }}</h5> -->
+        <p class="card-text">{{ product.name }}</p>
+        <p class="card-text">{{ product.price }}</p>
+        
+  
+        <button
+                class="btn btn-primary"
+                (click)="toggleDescription(product)"
+              >
+                show
+              </button>
+        <p *ngIf="product.isDescriptionVisible" class="card-text">
+          {{ product.description }}
+        </p>
+        
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
 
-      <button
-              class="btn btn-primary"
-              (click)="toggleDescription(product)"
-            >
-              show
-            </button>
-      <p *ngIf="product.isDescriptionVisible" class="card-text">
-        {{ product.description }}
-      </p>
-      <img class="w-100" src="{{ product.imgUrl }}" alt="">
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      
     </div>
   </div>
-</div>
+  </div>
 </div>
