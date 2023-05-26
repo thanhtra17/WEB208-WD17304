@@ -15,6 +15,7 @@ import { LayoutComponent } from './admin/layout/layout.component';
 import { ProductComponent } from './admin/product/product.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { FooterComponent } from './admin/component/footer/footer.component';
+import { DetailproductComponent } from './page/detailproduct/detailproduct.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './admin/component/footer/footer.component';
     LayoutComponent,
     ProductComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    DetailproductComponent
   ],
   imports: [
     BrowserModule,

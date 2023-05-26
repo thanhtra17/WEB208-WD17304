@@ -8,6 +8,7 @@ import { ProductsComponent } from './page/products/products.component';
 import { LayoutComponent } from './admin/layout/layout.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { ProductComponent } from './admin/product/product.component';
+import { DetailproductComponent } from './page/detailproduct/detailproduct.component';
 
 const routes: Routes = [
   {path:``,component:HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:`products`, component: ProductsComponent },
   {path:`login`, component:LoginComponent},
   {path:`register`, component:RegisterComponent},
+  {path:`detailproduct`,component:DetailproductComponent},
 
 
   { 

@@ -1,0 +1,22 @@
+*{
+    margin: auto;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1300px 300px;
+    margin: auto;
+}
+.anh{
+    text-align: center;
+    width: 90%;
+border-radius: 20px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.anh img{
+    width: 90%;
+    
+    padding: 10px;
+    
+    
+}
