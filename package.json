@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev": "nodemon main.js"
-
+    "dev": "concurrently \"json-server -w db.json\" \"ng serve -o\""
   },
   "private": true,
   "dependencies": {
@@ -21,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
     "bootstrap": "^5.2.3",
+    "concurrently": "^8.1.0",
     "json-server": "^0.17.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

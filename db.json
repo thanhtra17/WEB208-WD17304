@@ -1,13 +1,32 @@
 {
-    "products": [
-      { "id": 1, "name": "products 1", "price": "100" },
-      { "id": 2, "name": "products 1", "price": "100" },
-      { "id": 3, "name": "products 1", "price": "100" },
-      { "id": 4, "name": "products 1", "price": "100" }
-
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
-  }
+  "products": [
+    {
+      "id": "1",
+      "name": "product A",
+      "price": 200,
+      "desc": "desc 1",
+      "imgUrl": "https://heliosjewels.vn/cdn/shop/files/2_f57f2a33-db9f-4117-98e8-9756447d8a78_900x.jpg?v=1685639173"
+    },
+    {
+      "id": "2",
+      "name": "product B",
+      "price": 200,
+      "desc": "desc 1",
+      "imgUrl": "https://heliosjewels.vn/cdn/shop/files/DSC00578_900x.jpg?v=1685639172"
+    }
+  ],
+  "signup-users": [
+    {
+      "fullname": "abc",
+      "email": "ttra@gmail.com",
+      "password": "123456",
+      "id": "sBOWxQI"
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "id": "NHM-1eI"
+    }
+  ]
+}
