@@ -15,6 +15,11 @@ import { LayoutComponent } from './admin/layout/layout.component';
 import { ProductComponent } from './admin/product/product.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { FooterComponent } from './admin/component/footer/footer.component';
+import { ProductCreateComponent } from './product-create/product-create.component';
+import { ProductUpdateComponent } from './product-update/product-update.component';
+import { HttpClientModule} from "@angular/common/http";
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -30,11 +35,15 @@ import { FooterComponent } from './admin/component/footer/footer.component';
     LayoutComponent,
     ProductComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    ProductCreateComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

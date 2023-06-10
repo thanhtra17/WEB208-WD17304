@@ -21,27 +21,30 @@
     </button>
   </div>
   <div class="row mt-5 ">
-  <div class="col-sm-4 " *ngFor="let product of products">
+  <div class="col-sm-4 " *ngFor="let product of products ; index as i">
   <div class="card mx-auto" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body " >
+        <!-- <div class="col-3">{{ i + 1 }}</div> -->
         <img class="w-100" src="{{ product.imgUrl }}" alt="">
-        <!-- <h5 class="card-title">{{ product.id }}</h5> -->
         <p class="card-text">{{ product.name }}</p>
         <p class="card-text">{{ product.price }}</p>
+        <p class="card-text">{{ product.desc }}</p>
         
   
-        <button
+        <!-- <button
                 class="btn btn-primary"
                 (click)="toggleDescription(product)"
               >
                 show
-              </button>
-        <p *ngIf="product.isDescriptionVisible" class="card-text">
+              </button> -->
+        <!-- <p *ngIf="product.isDescriptionVisible" class="card-text">
           {{ product.description }}
-        </p>
+        </p> -->
         
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="/productdetail" class="btn btn-primary"> Detail</a>
+        <button class="btn btn-danger" (click)="delete(product.id!)">Xóa</button>
+        <a class="btn" [routerLink]="'product-update/' + product.id">Update</a>
       </div>
 
       

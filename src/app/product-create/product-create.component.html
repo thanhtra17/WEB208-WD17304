@@ -1,0 +1,16 @@
+<div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+      <label for="">ten sp</label>
+      <input type="text" formControlName="name" />
+      <label for="">gia sp</label>
+
+      <input type="number" formControlName="price" />
+      <label for="">mo ta</label>
+
+      <input type="text" formControlName="desc" />
+      <label for="">anh</label>
+
+      <input type="text" formControlName="imgUrl" />
+      <button type="submit" [disabled]="!productForm.valid">Thêm</button>
+    </form>
+  </div>
